@@ -156,11 +156,11 @@ RUN ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases
 
 RUN npm config set unsafe-perm true
 
-ENV CORDOVA_VERSION=9.0.0
+ENV CORDOVA_VERSION=10.0.0
 
-RUN npm install -g cordova@"$CORDOVA_VERSION"
+#RUN npm install -g cordova@"$CORDOVA_VERSION"
 
-# RUN npm install -g cordova@"$CORDOVA_VERSION" ionic@"$IONIC_VERSION" && \
+RUN npm install -g cordova@"$CORDOVA_VERSION" ionic
 #     git config --global user.email "you@example.com" && \
 #     git config --global user.name "Your Name" && \
 #     ionic start myApp sidemenu --no-interactive
